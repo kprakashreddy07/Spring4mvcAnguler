@@ -1,6 +1,9 @@
 com\websystique\springmvc\configuration\HelloWorldInitializer.class
 com\websystique\springmvc\service\UserService.class
+com\websystique\springmvc\Util\HibernateUtil.class
+com\websystique\springmvc\userDao\UserDao.class
 com\websystique\springmvc\controller\HelloWorldRestController.class
+com\websystique\springmvc\userDao\UserDaoImpl.class
 com\websystique\springmvc\configuration\HelloWorldConfiguration.class
 com\websystique\springmvc\configuration\CORSFilter.class
 com\websystique\springmvc\model\User.class

@@ -1,7 +1,10 @@
 D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\configuration\HelloWorldInitializer.java
 D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\configuration\CORSFilter.java
 D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\model\User.java
+D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\Util\HibernateUtil.java
 D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\configuration\HelloWorldConfiguration.java
+D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\userDao\UserDao.java
+D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\userDao\UserDaoImpl.java
 D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\controller\HelloWorldRestController.java
 D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\service\UserService.java
 D:\programing-dowl\Spring4MVCAngularJSExample\src\main\java\com\websystique\springmvc\controller\IndexController.java

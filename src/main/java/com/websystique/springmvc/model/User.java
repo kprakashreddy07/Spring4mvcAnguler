@@ -7,6 +7,7 @@ public class User {
 	private String username;
 	
 	private String address;
+	private int salary;
 	
 	private String email;
 	
@@ -14,10 +15,11 @@ public class User {
 		id=0;
 	}
 	
-	public User(long id, String username, String address, String email){
+	public User(long id, String username, String address, String email,int salary){
 		this.id = id;
 		this.username = username;
 		this.address = address;
+		this.salary=salary;
 		this.email = email;
 	}
 
@@ -52,6 +54,16 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
 
 	@Override
 	public int hashCode() {
@@ -78,7 +90,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", username=" + username + ", address=" + address
-				+ ", email=" + email + "]";
+				+ ",salary="+salary+", email=" + email + "]";
 	}
 	
 

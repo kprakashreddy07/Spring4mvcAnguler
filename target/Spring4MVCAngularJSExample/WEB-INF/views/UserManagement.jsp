@@ -58,6 +58,14 @@
                               </div>
                           </div>
                       </div>
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="file">Salary</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="ctrl.user.salary" class="form-control input-sm" placeholder="Enter your salary [This field is validation free]"/>
+                              </div>
+                          </div>
+                      </div>                      
 
                       <div class="row">
                           <div class="form-group col-md-12">
@@ -91,6 +99,7 @@
                               <th>ID.</th>
                               <th>Name</th>
                               <th>Address</th>
+                              <th>Salary</th>                              
                               <th>Email</th>
                               <th width="20%"></th>
                           </tr>
@@ -100,6 +109,7 @@
                               <td><span ng-bind="u.id"></span></td>
                               <td><span ng-bind="u.username"></span></td>
                               <td><span ng-bind="u.address"></span></td>
+                              <td><span ng-bind="u.salary"></span></td>                              
                               <td><span ng-bind="u.email"></span></td>
                               <td>
                               <button type="button" ng-click="ctrl.edit(u.id)" class="btn btn-success custom-width">Edit</button>  <button type="button" ng-click="ctrl.remove(u.id)" class="btn btn-danger custom-width">Remove</button>
