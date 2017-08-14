@@ -3,6 +3,7 @@ package com.websystique.springmvc.service;
 import java.util.List;
  
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,11 +12,12 @@ import com.websystique.springmvc.userDao.UserDao;
 
 @Service("userService")
 @Transactional
+@ComponentScan
 public class UserServiceImpl implements UserService{
 	
 	//private static final AtomicLong counter = new AtomicLong();
 	@Autowired
-	UserDao userDao;
+	  UserDao userDao;
 	
 	//private static List<User> users;
 	
@@ -36,14 +38,14 @@ public class UserServiceImpl implements UserService{
 		*/return userDao.findById(id);
 	}
 	
-	public User findByName(String name) {
-		/*for(User user : users){
+	/*public User findByName(String name) {
+		for(User user : users){
 			if(user.getUsername().equalsIgnoreCase(name)){
 				return user;
 			}
-		}*/
+		}
 		return userDao.findByName(name);
-	}
+	}*/
 	
 	public void saveUser(User user) {
 		/*user.setId(counter.incrementAndGet());
@@ -69,8 +71,9 @@ public class UserServiceImpl implements UserService{
 	*/userDao.deleteUserById(id);
 		}
 
-	public boolean isUserExist(User user) {
-		return findByName(user.getUsername())!=null;
+	public boolean isUserExist(String username) {
+		return userDao.isUserExist(username);
+		//return findById(user.getId())!=null;
 	}
 	
 	public void deleteAllUsers(){

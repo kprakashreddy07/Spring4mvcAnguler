@@ -58,11 +58,11 @@ public class HelloWorldRestController {
     public ResponseEntity<Void> createUser(@RequestBody User user,    UriComponentsBuilder ucBuilder) {
         System.out.println("Creating User " + user.getUsername());
  
-        if (userService.isUserExist(user)) {
+       /* if (userService.isUserExist(username)) {
             System.out.println("A User with name " + user.getUsername() + " already exist");
             return new ResponseEntity<Void>(HttpStatus.CONFLICT);
-        }
- 
+        }else
+ */
         userService.saveUser(user);
  
         HttpHeaders headers = new HttpHeaders();

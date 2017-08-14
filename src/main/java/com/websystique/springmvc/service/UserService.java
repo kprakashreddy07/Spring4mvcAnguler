@@ -10,7 +10,7 @@ public interface UserService {
 	
 	User findById(long id);
 	
-	User findByName(String name);
+	//User findByName(String name);
 	
 	void saveUser(User user);
 	
@@ -22,6 +22,6 @@ public interface UserService {
 	
 	void deleteAllUsers();
 	
-	public boolean isUserExist(User user);
+	public boolean isUserExist(String username);
 	
 }
