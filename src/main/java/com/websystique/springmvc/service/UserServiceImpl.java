@@ -30,12 +30,13 @@ public class UserServiceImpl implements UserService{
 	}
 	
 	public User findById(long id) {
+		return userDao.findById(id);
 		/*for(User user : users){
 			if(user.getId() == id){
 				return user;
 			}
 		}
-		*/return userDao.findById(id);
+		*/
 	}
 	
 	/*public User findByName(String name) {
@@ -61,6 +62,7 @@ public class UserServiceImpl implements UserService{
 		}
 
 	public void deleteUserById(long id) {
+		userDao.deleteUserById(id);
 		
 		/*for (Iterator<User> iterator = users.iterator(); iterator.hasNext(); ) {
 		    User user = iterator.next();
@@ -68,7 +70,7 @@ public class UserServiceImpl implements UserService{
 		        iterator.remove();
 		    }
 		}
-	*/userDao.deleteUserById(id);
+	*/
 		}
 
 	public boolean isUserExist(String username) {
